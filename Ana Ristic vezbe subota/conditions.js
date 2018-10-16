@@ -1,3 +1,5 @@
+"use strict";
+
 // Write a program that compares two numbers and display the larger.
 // Result should be displayed in the console.
 
@@ -89,27 +91,26 @@ if (a > b && a > c && a > d && a > e) {
 }
 
 // Write a conditional statement to sort three numbers.
-// Sample numbers : 0, -1, 4 
-// Output : 4, 0, -1 
+// Sample numbers : 0, -1, 4
+// Output : 4, 0, -1
 
-var a= 0;
-var b= -1;
-var c= 4;
-
-if (b>a){
-    tmp = a;
-    a=b;
-    b=tmp;
-    
-} if (c>a){
-    tmp = a;
-    a = c;
-    c = tmp;
-
-} if (c>b){
-    tmp = b;
-    b = c;
-    c = tmp;
-
-} console.log (a + " " + b + " " + c);
-
+var a = 0;
+var b = -1;
+var c = 4;
+var tmp;
+if (b > a) {
+  tmp = a;
+  a = b;
+  b = tmp;
+}
+if (c > a) {
+  tmp = a;
+  a = c;
+  c = tmp;
+}
+if (c > b) {
+  tmp = b;
+  b = c;
+  c = tmp;
+}
+console.log(a + " " + b + " " + c);
