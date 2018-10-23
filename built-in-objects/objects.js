@@ -166,3 +166,4 @@ function abbreviated(word) {
     return wordSort[0] + " " + wordJoin;
 }
 console.log(abbreviated("John Snow"));
+
