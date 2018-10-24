@@ -12,13 +12,15 @@ printNumbers(1, 17);
 
 function isPositive(number) {
     if (number >= 0) {
-        console.log("The number is positive!");
+        return true;
     }
     if (number < 0) {
-        console.log("The number is negative!");
+        return false;
     }
 }
-isPositive(-2);
+var result = isPositive(2);
+console.log(result);
+
 
 // Write a function that outputs array of every second character from the provided string. 
 // In case that string is not provided outputs array empty array. 
@@ -57,7 +59,7 @@ console.log(result);
 //Also assume that two compared arrays have the same number of elements.
 
 function equalArrays(array1, array2) {
-    if(array1.length !== array2.length){
+    if (array1.length !== array2.length) {
         return false;
     }
 
@@ -102,10 +104,10 @@ function numberOfInputs(argument1) {
 numberOfInputs(3, 4, 6, 8);
 
 // Write a function that sets some global variable to the new value.
- 
+
 var global = "string";
 
-function changeVariable(){
+function changeVariable() {
     global = "not global anymore";
     return global;
 }
@@ -115,9 +117,9 @@ console.log(global);
 
 // Write a function that replaces all white spaces from string with dash (-). 
 
-function dash(string){
+function dash(string) {
 
-return "Write a function with dashes".split(" ").join("-");
+    return "Write a function with dashes".split(" ").join("-");
 }
 var result = dash("Write a function with dashes");
 console.log(result);
@@ -127,12 +129,12 @@ console.log(result);
 
 
 var book = {
-   name: "Moja genijalna prijateljica",
-   genre: "Drama",
-   published: 2016,
-   publishingYear: function(currentYear){
-       return currentYear - this.published;
-   }
+    name: "Moja genijalna prijateljica",
+    genre: "Drama",
+    published: 2016,
+    publishingYear: function (currentYear) {
+        return currentYear - this.published;
+    }
 };
 
 var person = {
@@ -156,7 +158,7 @@ function Book(name, genre, year) {
     this.name = name;
     this.genre = genre;
     this.published = year;
-    this.publishingYear = function(currentYear){
+    this.publishingYear = function (currentYear) {
         return currentYear - this.published;
     }
 }
