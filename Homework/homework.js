@@ -56,4 +56,100 @@ console.log(result);
 //Assume that arrays are equal if they have all the same elements. 
 //Also assume that two compared arrays have the same number of elements.
 
+function equalArrays(array1, array2) {
+    if(array1.length !== array2.length){
+        return false;
+    }
+
+    for (var i = 0; i < array1.length; i++) {
+        if (array1[i] !== array2[i]) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+var result = equalArrays([4, 5, 3, 4, 5], [4, 5, 3, 4, 5]);
+console.log(result);
+
+// Write a function that reverses a word or sentence.
+// Cover cases if sentence is not provided.
+
+function reverseWord(word) {
+    var splitString;
+    var reverseArray;
+    var joinArray;
+
+
+    splitString = word.split("");
+    reverseArray = splitString.reverse();
+    joinArray = reverseArray.join("");
+
+
+
+    return joinArray;
+
+}
+var result = reverseWord("125654");
+console.log(result);
+
+// Write a function that prints out number of input arguments of the function.
+
+function numberOfInputs(argument1) {
+    console.log(arguments.length);
+}
+numberOfInputs(3, 4, 6, 8);
+
+// Write a function that sets some global variable to the new value.
+ 
+var global = "string";
+
+function changeVariable(){
+    global = "not global anymore";
+    return global;
+}
+
+changeVariable();
+console.log(global);
+
+// Write a function that replaces all white spaces from string with dash (-). 
+
+function dash(string){
+
+return "Write a function with dashes".split(" ").join("-");
+}
+var result = dash("Write a function with dashes");
+console.log(result);
+
+// Write object representing a book, an animal and a person. 
+// Create constructor functions for same entities. 
+
+
+var book = {
+
+   name: "Moja genijalna prijateljica",
+   genre: "Drama",
+   published: 2016,
+   publishingYear: function(currentYear){
+       return currentYear - this.published;
+   }
+}
+console.log(book.publishingYear(2018));
+
+var person = {
+
+    name: "Paulo Coelho"
+    profession: "Novelist",
+    nationality: "Brazilian",
+    years: 71
+}
+
+var dog = {
+
+    name: "Zoi"
+    dogtype: "Labrador",
+    years: 3,
+    color: "Golden"
+}
 
