@@ -168,3 +168,6 @@ var influencePeopleBook = new Book("asdf", "eee", 2018);
 
 console.log(genijalnaPrijateljicaBook);
 console.log(influencePeopleBook);
+
+
+console.log(console.log('JS'));
