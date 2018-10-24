@@ -127,18 +127,15 @@ console.log(result);
 
 
 var book = {
-
    name: "Moja genijalna prijateljica",
    genre: "Drama",
    published: 2016,
    publishingYear: function(currentYear){
        return currentYear - this.published;
    }
-}
-console.log(book.publishingYear(2018));
+};
 
 var person = {
-
     name: "Paulo Coelho"
     profession: "Novelist",
     nationality: "Brazilian",
@@ -146,10 +143,26 @@ var person = {
 }
 
 var dog = {
-
     name: "Zoi"
     dogtype: "Labrador",
     years: 3,
     color: "Golden"
 }
 
+// --------------------------------------------
+
+
+function Book(name, genre, year) {
+    this.name = name;
+    this.genre = genre;
+    this.published = year;
+    this.publishingYear = function(currentYear){
+        return currentYear - this.published;
+    }
+}
+
+var genijalnaPrijateljicaBook = new Book("Moja genijalna prijateljica", "Drama", 2018);
+var influencePeopleBook = new Book("asdf", "eee", 2018);
+
+console.log(genijalnaPrijateljicaBook);
+console.log(influencePeopleBook);
