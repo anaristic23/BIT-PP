@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>
+        Title:
+        <input type="text" name="title" id="title">
+    </label>
+
+    <label>
+        Duration:
+        <input type="number" name="duration" id="duration">
+    </label>
+
+    <label>
+        Genre:
+        <select name="genre" id="genre">
+            <option value="action">Action</option>
+            <option value="drama">Drama</option>
+            <option value="commedy">Commedy</option>
+        </select>
+    </label>
+
+    <button id="create-movie-button">Create Movie</button>
+
+    <ul id="movies-list"></ul> 
+
+    <hr>
+
+    <label>
+        Date:
+        <input type="date" name="date" id="date">
+    </label>
+
+    <button id="create-program-button">Create Program</button>
+
+    <script src="./entities.js"></script>
+    <script src="./form.js"></script>
+</body>
+
+</html>
