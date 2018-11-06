@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Movie List</h3>
+    <div class="container">
+        <form> Movie
+            <fieldset>
+                <label> Title <br>
+                    <input type="text" name="title" class="title">
+
+                </label>
+
+
+                <br> <label> Length (min) <br>
+                    <input type="text" name="length" class="length">
+                </label>
+                <br>
+                <select class="genreSelect">
+                    <option value="#">-</option>
+                    <option value="drama">Drama</option>
+                    <option value="action">Action</option>
+                    <option value="horor">Horor</option>
+                    <option value="triler">Triler</option>
+                </select>
+                <br>
+                <input type="button" class="addMovieButton" value="Create Movies">
+
+
+
+
+            </fieldset>
+        </form>
+        <div class="movieList"></div>
+
+        <form>Program
+
+            <fieldset>
+                <label>Date <br>
+
+                    <input class="dateForm" type="date">
+                </label>
+
+                <input type="button" class="buttonDate" value="Create Program">
+
+                <div class="putDate"></div>
+
+                <hr>
+                <label>
+                    Movie
+                    <select class="movieSelect">
+                        <option value="-">-</option>
+
+                    </select>
+                </label>
+                <br>
+                <label> Program
+                    <select class="programSelect">
+                        <option value="-">-</option>
+
+                    </select>
+                </label>
+
+                <input type="button" class="addMovie" value="Add Movie to Program">
+
+            </fieldset>
+
+        </form>
+
+
+    </div>
+
+
+    <script src="./movie.js"></script>
+    <script src="./program.js"></script>
+</body>
+
+</html>
