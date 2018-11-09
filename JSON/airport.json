@@ -1,0 +1,41 @@
+{
+    "name": "Nikola Tesla",
+    "listOfFlights": [
+        {
+            "relation": "Belgrade",
+            "date": "21.01.2019.",
+            "listOfPassengers": [
+                {
+                    "person": {
+                        "name": "Jelena",
+                        "surname": "Biberovic"
+                    },
+                    "seat": {
+                        "number": "22",
+                        "category": "b"
+                    }
+                },
+                {
+                    "person": {
+                        "name": "Aleksandra",
+                        "surname": "Bojkovic"
+                    },
+                    "seat": {
+                        "number": "21",
+                        "category": "b"
+                    }
+                },
+                {
+                    "person": {
+                        "name": "Ana",
+                        "surname": "Ristic"
+                    },
+                    "seat": {
+                        "number": "23",
+                        "category": "b"
+                    }
+                }
+            ]
+        }
+    ]
+}

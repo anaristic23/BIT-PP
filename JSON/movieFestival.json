@@ -1,0 +1,35 @@
+{
+    "festival": {
+        "name": "Weekend Festival",
+        "numberOfAllMovies": "3",
+        "listOfPrograms": [
+            {
+                "date": "25.11.2018",
+                "totalNumberOfMovies": "3",
+                "listOfMovies": [
+                    {
+                        "title": "Batman",
+                        "length": "120",
+                        "genre": {
+                            "name": "action"
+                        }
+                    },
+                    {
+                        "title": "Superman",
+                        "length": "114",
+                        "genre": {
+                            "name": "action"
+                        }
+                    },
+                    {
+                        "title": "Kisni kerovi",
+                        "length": "105",
+                        "genre": {
+                            "name": "action"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
